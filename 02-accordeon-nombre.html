@@ -8,5 +8,19 @@
   </head>
   <body>
     <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
+    <div class="accordeon">
+      <section>
+        <button @click="expanded = ! expanded">bouton 1</button>
+        <p x-show="expanded" x-collapse>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, quaerat saepe cumque numquam exercitationem vero qui atque fuga doloribus beatae maxime libero quo perspiciatis molestias consequuntur aliquid recusandae enim dolorem!</p>
+      </section>
+      <section>
+        <button>bouton 2</button>
+        <p>Incidunt nihil, facere architecto numquam similique hic sed aliquid labore odit veritatis libero ducimus, pariatur placeat molestias officia saepe nesciunt eligendi! Dicta natus vitae esse nesciunt necessitatibus, quasi in optio.</p>
+      </section>
+      <section>
+        <button>bouton 3</button>
+        <p>Voluptate, consectetur architecto. Doloribus, distinctio. Asperiores reiciendis quis id recusandae esse totam, ipsa quos mollitia fugit quaerat aliquid nisi impedit ipsam commodi sapiente? Earum esse repellendus cum voluptates optio incidunt.</p>
+      </section>
+    </div>
   </body>
 </html>
