@@ -8,5 +8,22 @@
   </head>
   <body>
     <h1>Onglets</h1>
+    <div id="onglets" x-data="{
+     ouvert : 1,
+    }">
+    <div>
+      <div role="tabpanel" :class="{actif:ouvert === 1,}">
+        <h1>Panneau 1</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis et asperiores veniam nam vitae rerum unde repellendus quisquam eligendi id debitis exercitationem rem est tempora necessitatibus doloribus temporibus, iure repellat?</p>
+      </div>
+      <div role="tabpanel" :class="{actif:ouvert === 2,}">
+        <h1>Panneau 2</h1>
+        <p>Facere veritatis maiores omnis odit corrupti laudantium velit optio ad dignissimos suscipit. Sapiente libero illum deleniti pariatur optio dicta, neque modi ducimus provident, animi sed! Obcaecati voluptatem dolores ullam nam.</p>
+      </div>
+      <div role="tabpanel" :class="{actif:ouvert === 3,}">
+        <h1>Panneau 3</h1>
+        <p>In rerum eligendi laudantium reprehenderit odit quasi ut beatae veniam. Accusantium, nulla repudiandae delectus molestias similique deleniti ipsam nihil. Vero minima doloremque corrupti ullam voluptas aperiam facere! Sed, reprehenderit voluptate!</p>
+      </div>
+    </div>
   </body>
 </html>
