@@ -5,12 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Onglets</title>
+    <style>
+      .box {
+        border: 1px solid #aaa9a9;
+        padding: 1rem;
+        margin-bottom: 1rem;
+      }
+    </style>
   </head>
   <body>
+    <div id="onglets" x-data="{
+     ouvert : 1,
+    }"
+    ></div>
     <h1>Onglets</h1>
     <div id="onglets" x-data="{
      ouvert : 1,
     }">
+      <button @click="ouvert = 1">Panneau 1</button>
+      <button @click="ouvert = 2">Panneau 2</button>
+      <button @click="ouvert = 3">Panneau 3</button>
     <div>
       <div role="tabpanel" :class="{actif:ouvert === 1,}">
         <h1>Panneau 1</h1>
