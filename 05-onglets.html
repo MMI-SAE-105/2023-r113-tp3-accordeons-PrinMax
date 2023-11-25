@@ -10,6 +10,7 @@
         border: 1px solid #aaa9a9;
         padding: 1rem;
         margin-bottom: 1rem;
+        
       }
     </style>
   </head>
@@ -22,9 +23,11 @@
     <div id="onglets" x-data="{
      ouvert : 1,
     }">
-      <button @click="ouvert = 1">Panneau 1</button>
-      <button @click="ouvert = 2">Panneau 2</button>
-      <button @click="ouvert = 3">Panneau 3</button>
+    <ul role="tablist">
+      <li role="tab" :class="{actif:ouvert === 1,}" @click="ouvert = 1"><button>Panneau 1</button></li>
+      <li role="tab" :class="{actif:ouvert === 1,}" @click="ouvert = 2"><button>Panneau 2</button></li>
+      <li role="tab" :class="{actif:ouvert === 1,}" @click="ouvert = 3"><button>Panneau 3</button></li>
+    </ul>
     <div>
       <div role="tabpanel" :class="{actif:ouvert === 1,}">
         <h1>Panneau 1</h1>
